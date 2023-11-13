@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Signika", sans-serif;
+}
+
+.headerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 64px;
+}
+.headerMain img {
+  width: 150px;
+}
+.headerMain .navLinks {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.headerMain .navLinks .navLink {
+  margin-left: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.heroMain {
+  width: 100%;
+}
+.heroMain img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+}
+.heroMain .enquireMain {
+  position: relative;
+  top: -150px;
+}
+.heroMain .enquireMain .enquireBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffffff;
+  width: 250px;
+  margin: 0px 64px;
+}
+.heroMain .enquireMain .enquireBtn .enquireCircleIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #3877B7;
+}
+.heroMain .enquireMain .enquireBtn:hover {
+  transition: all 0.3s ease-in-out;
+  border-bottom: 10px solid black;
+}
+.heroMain .enquireMain .enquireBtn:hover svg {
+  transform: rotate(-20deg);
+}/*# sourceMappingURL=Styles.css.map */

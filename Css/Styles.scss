@@ -1,0 +1,98 @@
+@import './variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+.headerMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 64px;
+
+    img{
+        width: 150px;
+    }
+
+    .navLinks{
+        display: flex;
+        // text-decoration: none;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+
+        .navLink{
+            margin-left: 20px;
+            font-size: map-get($FontSize, regular);
+            cursor: pointer;
+        }
+    }
+}
+
+.heroMain{
+    width: 100%;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+    }
+
+    .enquireMain{
+
+        position: relative;
+        top: -150px;
+
+        .enquireBtn{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: map-get($FontSize, medium );
+            padding: 10px;
+            border: none;
+            border-radius: 50px;
+            background-color: $primaryColor;
+            width: 250px;
+            margin: 0px 64px;
+            
+            .enquireCircleIcon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 50px;
+                // border: none;
+                background-color: $secondaryColor;
+            
+            
+            }
+
+            
+            &:hover{
+                transition: all 0.3s ease-in-out;
+                border-bottom: 10px solid black;
+
+                svg{
+                    transform: rotate(-20deg);
+                }
+
+            }
+
+
+        }
+
+
+
+
+      
+    }
+
+  
+    
+    
+}
