@@ -85,14 +85,63 @@
 
 
         }
-
-
-
-
       
+    } 
+    
+}
+
+.shortAboutContainer{
+    padding: 0 64px;
+
+    .shortAboutMiddle{
+        display: flex;
+        justify-content: space-between;
+
+        .samLeft{
+            width: 40%;
+            max-width: 40%;
+            text-align: center;
+            height: 300px;
+            max-height: 300px;
+
+            img{
+                object-fit: cover;
+                height: 200px;
+                width: 100%;
+                border-radius: 55px;
+            }
+        }
+        .samRight{
+            width: 58%;
+            max-width: 58%;
+            text-align: center;
+            padding: 10px;
+            height: 200px;
+            border: 1px solid gray;
+            border-radius: 45px;
+
+            .samTopNumber{
+                display: flex;
+                justify-content: space-between;
+                
+                p{
+                    font-size: map-get($FontSize, big );
+                }
+            }
+
+            .samTopText{
+                text-align: left;
+                width: 100%;
+                
+
+                p{
+
+                    margin-top: -10px ;
+                    margin-left: 20px;
+                    font-size: map-get($FontSize, medium );
+                }
+            }
+        }
     }
 
-  
-    
-    
 }

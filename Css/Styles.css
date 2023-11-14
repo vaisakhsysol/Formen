@@ -68,4 +68,51 @@
 }
 .heroMain .enquireMain .enquireBtn:hover svg {
   transform: rotate(-20deg);
+}
+
+.shortAboutContainer {
+  padding: 0 64px;
+}
+.shortAboutContainer .shortAboutMiddle {
+  display: flex;
+  justify-content: space-between;
+}
+.shortAboutContainer .shortAboutMiddle .samLeft {
+  width: 40%;
+  max-width: 40%;
+  text-align: center;
+  height: 300px;
+  max-height: 300px;
+}
+.shortAboutContainer .shortAboutMiddle .samLeft img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-radius: 55px;
+}
+.shortAboutContainer .shortAboutMiddle .samRight {
+  width: 58%;
+  max-width: 58%;
+  text-align: center;
+  padding: 10px;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 45px;
+}
+.shortAboutContainer .shortAboutMiddle .samRight .samTopNumber {
+  display: flex;
+  justify-content: space-between;
+}
+.shortAboutContainer .shortAboutMiddle .samRight .samTopNumber p {
+  font-size: 35px;
+}
+.shortAboutContainer .shortAboutMiddle .samRight .samTopText {
+  text-align: left;
+  width: 100%;
+}
+.shortAboutContainer .shortAboutMiddle .samRight .samTopText p {
+  margin-top: -10px;
+  margin-left: 20px;
+  font-size: 20px;
 }/*# sourceMappingURL=Styles.css.map */
