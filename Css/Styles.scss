@@ -381,6 +381,13 @@
                 }
             }
 
+            &:hover{
+                cursor: pointer;
+                scale: 0.98;
+                transition: all 0.2s ease-in-out;
+                // background-color: antiquewhite;
+            }
+
         }
     }
 }

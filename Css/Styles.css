@@ -311,4 +311,9 @@
 .productSliderContainer .owl-carousel .item .itemText p {
   padding: 0 10px;
   font-size: 20px;
+}
+.productSliderContainer .owl-carousel .item:hover {
+  cursor: pointer;
+  scale: 0.98;
+  transition: all 0.2s ease-in-out;
 }/*# sourceMappingURL=Styles.css.map */
