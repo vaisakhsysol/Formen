@@ -290,4 +290,25 @@
   width: 10px;
   height: 10px;
   background-color: #26B3AA;
+}
+.productSliderContainer .owl-carousel {
+  padding: 0 64px;
+}
+.productSliderContainer .owl-carousel .item {
+  border-radius: 25px;
+  background-color: rgb(247, 247, 247);
+}
+.productSliderContainer .owl-carousel .item .itemImage {
+  padding: 10px;
+  border-radius: 20px;
+}
+.productSliderContainer .owl-carousel .item .itemImage img {
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+}
+.productSliderContainer .owl-carousel .item .itemText p {
+  padding: 0 10px;
+  font-size: 20px;
 }/*# sourceMappingURL=Styles.css.map */

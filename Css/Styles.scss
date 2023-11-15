@@ -354,4 +354,33 @@
         height: 10px;
         background-color: $accentColor;
     }
+
+    .owl-carousel{
+        padding: 0 64px;
+
+        .item{
+            border-radius: 25px;
+            background-color: rgb(247, 247, 247);
+            .itemImage{
+
+                padding: 10px;
+               
+                border-radius: 20px;
+                img{
+                    border-radius: 20px;
+                    object-fit: cover;
+                    height: 200px;
+                }
+              
+            }
+
+            .itemText{
+                p{
+                    padding: 0 10px;
+                    font-size: map-get($FontSize, medium );
+                }
+            }
+
+        }
+    }
 }
