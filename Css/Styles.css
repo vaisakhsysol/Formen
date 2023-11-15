@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Signika", sans-serif;
+  letter-spacing: 0.25px;
 }
 
 .headerMain {
@@ -215,6 +216,39 @@
   padding: 128px 64px;
 }
 .featuresContainer .featuresHeading {
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-size: 35px;
+}
+.featuresContainer .bubble {
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  background-color: #26B3AA;
+}
+.featuresContainer .featuresMain .featuresTop {
+  display: flex;
+  margin-top: 48px;
+}
+.featuresContainer .featuresMain .featuresTop .featuresTopImages {
+  display: flex;
+  width: 60%;
+}
+.featuresContainer .featuresMain .featuresTop .featuresTopImages img {
+  width: 50%;
+  margin-right: 10px;
+  border-radius: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featuresContainer .featuresMain .featuresTop .featuresTopText {
+  width: 50%;
+  margin-left: 32px;
+}
+.featuresContainer .featuresMain .featuresTop .featuresTopText .featuresHead {
+  font-size: 35px;
+}
+.featuresContainer .featuresMain .featuresTop .featuresTopText .featuresText {
+  font-size: 15px;
 }/*# sourceMappingURL=Styles.css.map */

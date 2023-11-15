@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Signika', sans-serif;
+    letter-spacing: 0.25px;
 }
 
 .headerMain{
@@ -268,7 +269,47 @@
     padding: 128px 64px;
     
     .featuresHeading{
+        display: flex;
+        justify-content: center;
         text-align: center;
         font-size: map-get($FontSize, big );
+    }
+    .bubble{
+        border-radius: 50px;
+        width: 10px;
+        height: 10px;
+        background-color: $accentColor;
+    }
+
+    .featuresMain{
+        .featuresTop{
+            display: flex;
+            margin-top: 48px;
+
+            .featuresTopImages{
+                display: flex;
+                width: 60%;
+
+                img{
+                    width: 50%;
+                    margin-right: 10px;
+                    border-radius: 35px;
+                    object-fit: cover
+                }
+            }
+
+            .featuresTopText{
+                width:50%;
+                margin-left: 32px;
+                
+                .featuresHead{
+                    font-size: map-get($FontSize,big );
+                }
+
+                .featuresText{
+                    font-size: map-get($FontSize, regular );
+                }
+            }
+        }
     }
 }
