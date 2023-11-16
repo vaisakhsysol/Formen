@@ -1,5 +1,19 @@
 @import './variables';
 
+@mixin mdDisplay {
+    @media screen and (max-width:$mdDisplay) {
+        @content;
+    }
+}
+
+@mixin tabDisplay {
+    @media screen and (max-width:$tabDisplay) {
+        @content;
+    }
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -32,6 +46,7 @@
             cursor: pointer;
         }
     }
+
 }
 
 .heroMain{
@@ -100,7 +115,7 @@
         .satLeft{
             width: 50%;
             max-width: 50%;
-            border: 1px solid gray;
+            border: 1px solid $borderColor;
             border-radius: 45px;
             padding: 30px;
             margin-bottom: 24px;
@@ -113,7 +128,15 @@
                 color: $accentColor;
             }
            }
+
+           &:hover{
+            scale: 0.9;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;        
+    }
         }
+
+        
         
         .satRight{
             width: 50%;
@@ -121,7 +144,7 @@
             text-align: center;
             padding: 5px;
             height: 200px;
-            border: 1px solid gray;
+            border: 1px solid $borderColor;
             border-radius: 45px;
             color: $primaryColor;
             background-color: $secondaryColor;
@@ -144,6 +167,12 @@
                     font-size: map-get($FontSize, medium );
                 }
             }
+
+            &:hover{
+                scale: 0.9;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;        
+        }
         }
     }
 
@@ -165,6 +194,11 @@
                 width: 100%;
                 border-radius: 55px;
             }
+            &:hover{
+                scale: 0.9;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;        
+        }
         }
         .samRight{
             width: 58%;
@@ -172,7 +206,7 @@
             text-align: center;
             padding: 10px;
             height: 200px;
-            border: 1px solid gray;
+            border: 1px solid $borderColor;
             border-radius: 45px;
 
             .samTopNumber{
@@ -198,6 +232,11 @@
                  
                 }
             }
+            &:hover{
+                scale: 0.9;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;        
+        }
         }
     }
 
@@ -208,7 +247,7 @@
         .sabLeft{
             padding: 10px;
             width: 30%;
-            border: 1px solid gray;
+            border: 1px solid $borderColor;
             border-radius: 45px;
             background-color: $accentColor;
 
@@ -224,13 +263,18 @@
             .sabLeftText{
                 font-size: map-get($FontSize, medium);
             }
+            &:hover{
+                scale: 0.9;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;        
+        }
 
         }
 
         .sabmLeft{
             padding: 10px;
             width: 30%;
-            border: 1px solid gray;
+            border: 1px solid $borderColor;
             border-radius: 45px;
             background-color: $primaryColor;
 
@@ -246,7 +290,11 @@
             .sabmLeftText{
                 font-size: map-get($FontSize, medium);
             }
-
+            &:hover{
+                scale: 0.9;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;        
+        }
         }
 
         .sabRight{
@@ -258,12 +306,20 @@
                 object-fit: cover;
                 border-radius: 45px;
             }
+            &:hover{
+                scale: 0.9;
+                transition: 0.2s ease-in-out;
+                cursor: pointer;        
+        }
         }
 
 
     }
 
+    
+
 }
+
 
 .featuresContainer{
     padding: 0 64px;
@@ -283,9 +339,10 @@
     }
 
     .featuresMain{
+        
         .featuresTop{
             display: flex;
-            margin-top: 48px;
+            margin-top: 64px;
 
             .featuresTopImages{
                 display: flex;
@@ -302,6 +359,7 @@
             .featuresTopText{
                 width:50%;
                 margin-left: 32px;
+                padding: 0 32px;
                 
                 .featuresHead{
                     font-size: map-get($FontSize,big );
@@ -439,4 +497,179 @@ footer{
     font-family: 'Signika', sans-serif;
     background-color: $secondaryColor;
     color: white;
+
+    a{
+        text-decoration: none;
+       
+    }
+
+    .footerLinks{
+        p{
+            margin-top: -10px;
+            font-size: map-get($FontSize, regular );
+        }
+    }
 }
+
+
+// medium Display Screen
+
+@include mdDisplay{
+    .shortAboutContainer{
+        .shortAboutTop{
+            .satLeft{
+                p{
+                    font-size: map-get($FontSize, big );
+                }
+            }
+
+            .satRight{
+                .satTopText{
+                    p{
+                    font-size: map-get($FontSize, regular );
+
+                    }
+                }
+            }
+        }   
+        
+       
+        .shortAboutMiddle{
+            .samRight{
+                .samTopNumber{
+                    p{
+                        font-size: map-get($FontSize, big );
+                    }
+                }
+                .samTopText{
+                    p{
+                        font-size: map-get($FontSize, regular );
+                    }
+                }
+            }
+        }
+
+        .shortAboutBottom{
+            .sabLeft{
+                .sabLeftNumber{
+                    p{
+                        font-size: map-get($FontSize, big );
+
+                    }
+                }
+
+                .sabLeftText{
+                    p{
+                        font-size: map-get($FontSize, regular );
+
+                    }
+                }
+            }
+
+            .sabmLeft{
+                .sabmLeftText{
+                    p{
+                        font-size: map-get($FontSize, regular );
+                    }
+                }
+            }
+        }
+
+
+    }
+    
+ }
+
+//  tablet Display Screen
+
+
+@include tabDisplay{
+
+    .headerMain{
+        .navLinks{
+            display: none;
+           }
+    }
+    
+
+    .shortAboutContainer{
+        
+        .shortAboutTop{
+            flex-direction: column;
+            width: 100%;
+
+            .satLeft{
+                width: 100%;
+            }
+
+            .satLeft{
+                width: 100%;
+                max-width: 100%;
+                font-size: map-get($FontSize, big);
+            }
+            .satRight{
+                width: 100%;
+                max-width: 100%;
+                font-size: map-get($FontSize, big);
+                margin-top: -10px;
+
+                p{
+                    padding: 15px;
+                }
+            }
+        }
+        
+
+        .shortAboutMiddle{
+            margin-top: 10px;
+
+            .samLeft{
+              
+                img{
+                    border-radius: 25px;
+                }
+        }
+            .samRight{
+                border-radius: 25px;
+                height: auto;
+                
+                .samTopText{
+                    margin-top: -10px;
+                }
+            }
+         }
+       
+         .shortAboutBottom{
+            margin-top: 10px;
+            flex-direction: column;
+
+            .sabLeft{
+                width: 100%;
+                height: auto;
+                P{
+                    padding: 10px;
+                }
+            }
+
+            .sabmLeft{
+                width: 100%;
+                margin-top: 10px;
+                p{
+                    padding: 10px;
+                }
+            }
+
+            .sabRight{
+                width: 100%;
+                margin-top: 10px;
+               
+            }
+         }
+        
+
+        
+
+
+    }
+    
+ }

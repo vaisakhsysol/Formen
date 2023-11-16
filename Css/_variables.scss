@@ -5,13 +5,21 @@ $primaryColor : #ffffff;
 $secondaryColor:#3877B7;
 $accentColor : #26B3AA;
 $textColor : #171719;
+$borderColor : #ececec;
 
 // font
 $FontSize : (
+    "small" : 12px,
     "regular" : 15px,
     "medium"  : 20px,
     "big" : 35px,
     "veryBig" : 45px,
     "headingBig" : 65px
-)
+);
 
+// Display Sizes
+
+$mdDisplay : 1024px;
+$tabDisplay : 768px;
+$mobileDisplay : 425px;
+$smallMobileDisplay : 320px;

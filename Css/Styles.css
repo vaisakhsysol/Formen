@@ -81,7 +81,7 @@
 .shortAboutContainer .shortAboutTop .satLeft {
   width: 50%;
   max-width: 50%;
-  border: 1px solid gray;
+  border: 1px solid #ececec;
   border-radius: 45px;
   padding: 30px;
   margin-bottom: 24px;
@@ -94,13 +94,18 @@
 .shortAboutContainer .shortAboutTop .satLeft p .formenText {
   color: #26B3AA;
 }
+.shortAboutContainer .shortAboutTop .satLeft:hover {
+  scale: 0.9;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 .shortAboutContainer .shortAboutTop .satRight {
   width: 50%;
   max-width: 50%;
   text-align: center;
   padding: 5px;
   height: 200px;
-  border: 1px solid gray;
+  border: 1px solid #ececec;
   border-radius: 45px;
   color: #ffffff;
   background-color: #3877B7;
@@ -121,6 +126,11 @@
   margin-left: 20px;
   font-size: 20px;
 }
+.shortAboutContainer .shortAboutTop .satRight:hover {
+  scale: 0.9;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 .shortAboutContainer .shortAboutMiddle {
   display: flex;
   justify-content: space-between;
@@ -139,13 +149,18 @@
   width: 100%;
   border-radius: 55px;
 }
+.shortAboutContainer .shortAboutMiddle .samLeft:hover {
+  scale: 0.9;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 .shortAboutContainer .shortAboutMiddle .samRight {
   width: 58%;
   max-width: 58%;
   text-align: center;
   padding: 10px;
   height: 200px;
-  border: 1px solid gray;
+  border: 1px solid #ececec;
   border-radius: 45px;
 }
 .shortAboutContainer .shortAboutMiddle .samRight .samTopNumber {
@@ -163,6 +178,11 @@
   margin-left: 20px;
   font-size: 20px;
 }
+.shortAboutContainer .shortAboutMiddle .samRight:hover {
+  scale: 0.9;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 .shortAboutContainer .shortAboutBottom {
   display: flex;
   justify-content: space-between;
@@ -170,7 +190,7 @@
 .shortAboutContainer .shortAboutBottom .sabLeft {
   padding: 10px;
   width: 30%;
-  border: 1px solid gray;
+  border: 1px solid #ececec;
   border-radius: 45px;
   background-color: #26B3AA;
 }
@@ -184,10 +204,15 @@
 .shortAboutContainer .shortAboutBottom .sabLeft .sabLeftText {
   font-size: 20px;
 }
+.shortAboutContainer .shortAboutBottom .sabLeft:hover {
+  scale: 0.9;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 .shortAboutContainer .shortAboutBottom .sabmLeft {
   padding: 10px;
   width: 30%;
-  border: 1px solid gray;
+  border: 1px solid #ececec;
   border-radius: 45px;
   background-color: #ffffff;
 }
@@ -201,6 +226,11 @@
 .shortAboutContainer .shortAboutBottom .sabmLeft .sabmLeftText {
   font-size: 20px;
 }
+.shortAboutContainer .shortAboutBottom .sabmLeft:hover {
+  scale: 0.9;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 .shortAboutContainer .shortAboutBottom .sabRight {
   width: 37%;
 }
@@ -210,6 +240,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 45px;
+}
+.shortAboutContainer .shortAboutBottom .sabRight:hover {
+  scale: 0.9;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .featuresContainer {
@@ -230,7 +265,7 @@
 }
 .featuresContainer .featuresMain .featuresTop {
   display: flex;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 .featuresContainer .featuresMain .featuresTop .featuresTopImages {
   display: flex;
@@ -246,6 +281,7 @@
 .featuresContainer .featuresMain .featuresTop .featuresTopText {
   width: 50%;
   margin-left: 32px;
+  padding: 0 32px;
 }
 .featuresContainer .featuresMain .featuresTop .featuresTopText .featuresHead {
   font-size: 35px;
@@ -361,4 +397,96 @@ footer {
   font-family: "Signika", sans-serif;
   background-color: #3877B7;
   color: white;
+}
+footer a {
+  text-decoration: none;
+}
+footer .footerLinks p {
+  margin-top: -10px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .shortAboutContainer .shortAboutTop .satLeft p {
+    font-size: 35px;
+  }
+  .shortAboutContainer .shortAboutTop .satRight .satTopText p {
+    font-size: 15px;
+  }
+  .shortAboutContainer .shortAboutMiddle .samRight .samTopNumber p {
+    font-size: 35px;
+  }
+  .shortAboutContainer .shortAboutMiddle .samRight .samTopText p {
+    font-size: 15px;
+  }
+  .shortAboutContainer .shortAboutBottom .sabLeft .sabLeftNumber p {
+    font-size: 35px;
+  }
+  .shortAboutContainer .shortAboutBottom .sabLeft .sabLeftText p {
+    font-size: 15px;
+  }
+  .shortAboutContainer .shortAboutBottom .sabmLeft .sabmLeftText p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerMain .navLinks {
+    display: none;
+  }
+  .shortAboutContainer .shortAboutTop {
+    flex-direction: column;
+    width: 100%;
+  }
+  .shortAboutContainer .shortAboutTop .satLeft {
+    width: 100%;
+  }
+  .shortAboutContainer .shortAboutTop .satLeft {
+    width: 100%;
+    max-width: 100%;
+    font-size: 35px;
+  }
+  .shortAboutContainer .shortAboutTop .satRight {
+    width: 100%;
+    max-width: 100%;
+    font-size: 35px;
+    margin-top: -10px;
+  }
+  .shortAboutContainer .shortAboutTop .satRight p {
+    padding: 15px;
+  }
+  .shortAboutContainer .shortAboutMiddle {
+    margin-top: 10px;
+  }
+  .shortAboutContainer .shortAboutMiddle .samLeft img {
+    border-radius: 25px;
+  }
+  .shortAboutContainer .shortAboutMiddle .samRight {
+    border-radius: 25px;
+    height: auto;
+  }
+  .shortAboutContainer .shortAboutMiddle .samRight .samTopText {
+    margin-top: -10px;
+  }
+  .shortAboutContainer .shortAboutBottom {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .shortAboutContainer .shortAboutBottom .sabLeft {
+    width: 100%;
+    height: auto;
+  }
+  .shortAboutContainer .shortAboutBottom .sabLeft P {
+    padding: 10px;
+  }
+  .shortAboutContainer .shortAboutBottom .sabmLeft {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .shortAboutContainer .shortAboutBottom .sabmLeft p {
+    padding: 10px;
+  }
+  .shortAboutContainer .shortAboutBottom .sabRight {
+    width: 100%;
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=Styles.css.map */
