@@ -1,16 +1,7 @@
 @import './variables';
 
-@mixin mdDisplay {
-    @media screen and (max-width:$mdDisplay) {
-        @content;
-    }
-}
 
-@mixin tabDisplay {
-    @media screen and (max-width:$tabDisplay) {
-        @content;
-    }
-}
+
 
 
 
@@ -514,6 +505,13 @@ footer{
 
 // medium Display Screen
 
+@mixin mdDisplay {
+    @media screen and (max-width:$mdDisplay) {
+        @content;
+    }
+}
+
+
 @include mdDisplay{
     .shortAboutContainer{
         .shortAboutTop{
@@ -577,10 +575,17 @@ footer{
 
 
     }
+
+    
     
  }
 
 //  tablet Display Screen
+@mixin tabDisplay {
+    @media screen and (max-width:$tabDisplay) {
+        @content;
+    }
+}
 
 
 @include tabDisplay{
@@ -666,10 +671,347 @@ footer{
             }
          }
         
+    }
 
+    
+.featuresContainer{
+    padding: 0 64px;
+    margin-top: 128px;
+    
+    .featuresHeading{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: map-get($FontSize, big );
+    }
+    .bubble{
+        border-radius: 50px;
+        width: 10px;
+        height: 10px;
+        background-color: $accentColor;
+    }
+
+    .featuresMain{
+        
+        .featuresTop{
+            flex-direction: column;
+            margin-top: 12px;
+
+            .featuresTopImages{
+                display: flex;
+                width: 100%;
+                margin-top: 24px;
+                margin-bottom: 24px;
+
+                img{
+                    width: 50%;
+                    margin-right: 10px;
+                    border-radius: 35px;
+                    object-fit: cover
+                }
+            }
+
+            .featuresTopText{
+                width:100%;
+                margin-left: 0px;
+                margin-top: 12px;
+                padding: 0;
+                
+                .featuresHead{
+                    font-size: map-get($FontSize,big );
+                }
+
+                .featuresText{
+                    font-size: map-get($FontSize, regular );
+                }
+            }
+        }
+    }
+}
+
+.videoContainer{
+
+    margin-top: 64px;
+
+    .featuresHeading{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: map-get($FontSize, big );
+    }
+    .bubble{
+        border-radius: 50px;
+        width: 10px;
+        height: 10px;
+        background-color: $accentColor;
+    }
+    padding: 0 64px;
+
+    video{
+        width: 100%;
+        height: 500px;
+        border-radius: 45px;
+    }
+}
+
+
+    
+ }
+
+
+ //Mobile Display
+
+ @mixin mobileDisplay {
+    @media screen and (max-width:$mobileDisplay) {
+        @content;
+    }
+}
+
+ @include mobileDisplay{
+
+    .headerMain{
+        .navLinks{
+            display: none;
+           }
+    }
+    
+
+    .shortAboutContainer{
+
+        padding: 0 24px;
+
+        .shortAboutTop{
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+
+            .satLeft{
+                width: 100%;
+                border-radius: 15px;
+
+                padding: 10px;
+                p{
+                    padding: 0;
+                }
+            }
+
+            .satLeft{
+                width: 100%;
+                max-width: 100%;
+                font-size: map-get($FontSize, medium);
+            }
+            .satRight{
+                width: 100%;
+                max-width: 100%;
+                font-size: map-get($FontSize, medium);
+                margin-top: -10px;
+                border-radius: 15px;
+
+                p{
+                    padding: 5px;
+                }
+            }
+        }
         
 
+        .shortAboutMiddle{
+            margin-top: 10px;
+            flex-direction: column;
+            width: 100%;
 
+            .samLeft{
+              width: 100%;
+                    min-width: 100%;
+                img{
+                    border-radius: 15px;
+                    width: 100%;
+                    min-width: 100%;
+                }
+        }
+            .samRight{
+                border-radius: 25px;
+                height: auto;
+                width: 100%;
+                min-width: 100%;
+                border-radius: 15px;
+
+                .samTopText{
+                    margin-top: -10px;
+                    width: 100%;
+                    min-width: 100%;
+                    border-radius: 15px;
+                }
+            }
+         }
+       
+         .shortAboutBottom{
+            margin-top: 10px;
+            flex-direction: column;
+
+            .sabLeft{
+                width: 100%;
+                height: auto;
+                border-radius: 15px;
+                P{
+                    padding: 10px;
+                }
+            }
+
+            .sabmLeft{
+                width: 100%;
+                margin-top: 10px;
+                border-radius: 15px;    
+                p{
+                    padding: 10px;
+                    border-radius: 15px;
+                }
+            }
+
+            .sabRight{
+                width: 100%;
+                margin-top: 10px;
+                border-radius: 15px;
+
+                img{
+                    border-radius: 15px;
+                }
+               
+            }
+         }
+    }  
+
+    .featuresContainer{
+        padding: 0 32px;
+        margin-top: 128px;
+        
+        .featuresHeading{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: map-get($FontSize, medium );
+        }
+        .bubble{
+            border-radius: 50px;
+            width: 10px;
+            height: 10px;
+            background-color: $accentColor;
+        }
+    
+        .featuresMain{
+            
+            .featuresTop{
+                flex-direction: column;
+                margin-top: 12px;
+    
+                .featuresTopImages{
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 100%;
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+    
+                    img{
+                        width: 100%;
+                        margin-right: 10px;
+                        border-radius: 35px;
+                        object-fit: cover;
+                        margin-top: 12px;
+                    }
+                }
+    
+                .featuresTopText{
+                    width:100%;
+                    margin-left: 0px;
+                    margin-top: 12px;
+                    padding: 0;
+                    
+                    .featuresHead{
+                        font-size: map-get($FontSize,medium );
+                    }
+    
+                    .featuresText{
+                        font-size: map-get($FontSize, small );
+                    }
+                }
+            }
+        }
+    }
+    
+    .videoContainer{
+    
+        margin-top: 64px;
+    
+        .featuresHeading{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: map-get($FontSize, small );
+        }
+        .bubble{
+            border-radius: 50px;
+            width: 10px;
+            height: 10px;
+            background-color: $accentColor;
+        }
+        padding: 0 32px;
+    
+        video{
+            width: 100%;
+            height: 300px;
+            border-radius: 45px;
+        }
+    }
+
+    .productSliderContainer{
+        margin-top: 64px;
+        .featuresHeading{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: map-get($FontSize, medium );
+        }
+        .bubble{
+            border-radius: 50px;
+            width: 10px;
+            height: 10px;
+            background-color: $accentColor;
+        }
+    
+        .owl-carousel{
+            padding: 0 32px;
+    
+            .item{
+                border-radius: 25px;
+                background-color: rgb(247, 247, 247);
+                .itemImage{
+    
+                    padding: 10px;
+                   
+                    border-radius: 20px;
+                    img{
+                        border-radius: 20px;
+                        object-fit: cover;
+                        height: 200px;
+                    }
+                  
+                }
+    
+                .itemText{
+                    p{
+                        padding: 0 10px;
+                        font-size: map-get($FontSize, medium );
+                    }
+                }
+    
+                &:hover{
+                    cursor: pointer;
+                    scale: 0.98;
+                    transition: all 0.2s ease-in-out;
+                    // background-color: antiquewhite;
+                }
+    
+            }
+        }
     }
     
  }
