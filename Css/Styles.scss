@@ -1013,5 +1013,33 @@ footer{
             }
         }
     }
+  
+    .mailandPhone{
+        margin-top: 24px;
+        padding: 0 64px;
+        display: flex;
+        flex-direction: column;
     
+        .mailContainer{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+    
+            .mail{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 25px;
+                border: 1px solid $accentColor;
+            }
+    
+            p{
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
  }

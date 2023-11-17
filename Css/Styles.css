@@ -756,4 +756,29 @@ footer .footerLinks p {
     scale: 0.98;
     transition: all 0.2s ease-in-out;
   }
+  .mailandPhone {
+    margin-top: 24px;
+    padding: 0 64px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mailandPhone .mailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .mailandPhone .mailContainer .mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #26B3AA;
+  }
+  .mailandPhone .mailContainer p {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=Styles.css.map */
