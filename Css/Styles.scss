@@ -31,6 +31,11 @@
         justify-content: center;
         margin-bottom: 0;
 
+        a{
+            text-decoration: none;
+            color: #313131;
+        }
+
         .navLink{
             margin-left: 20px;
             font-size: map-get($FontSize, regular);
@@ -121,7 +126,7 @@
            }
 
            &:hover{
-            scale: 0.9;
+            scale: 0.96;
             transition: 0.2s ease-in-out;
             cursor: pointer;        
     }
@@ -160,7 +165,7 @@
             }
 
             &:hover{
-                scale: 0.9;
+                scale: 0.96;
                 transition: 0.2s ease-in-out;
                 cursor: pointer;        
         }
@@ -186,7 +191,7 @@
                 border-radius: 55px;
             }
             &:hover{
-                scale: 0.9;
+                scale: 0.96;
                 transition: 0.2s ease-in-out;
                 cursor: pointer;        
         }
@@ -224,7 +229,7 @@
                 }
             }
             &:hover{
-                scale: 0.9;
+                scale: 0.96;
                 transition: 0.2s ease-in-out;
                 cursor: pointer;        
         }
@@ -255,7 +260,7 @@
                 font-size: map-get($FontSize, medium);
             }
             &:hover{
-                scale: 0.9;
+                scale: 0.96;
                 transition: 0.2s ease-in-out;
                 cursor: pointer;        
         }
@@ -282,7 +287,7 @@
                 font-size: map-get($FontSize, medium);
             }
             &:hover{
-                scale: 0.9;
+                scale: 0.96;
                 transition: 0.2s ease-in-out;
                 cursor: pointer;        
         }
@@ -298,7 +303,7 @@
                 border-radius: 45px;
             }
             &:hover{
-                scale: 0.9;
+                scale: 0.96;
                 transition: 0.2s ease-in-out;
                 cursor: pointer;        
         }
@@ -404,7 +409,7 @@
         background-color: $accentColor;
     }
 
-    .owl-carousel{
+    .owl-Products{
         padding: 0 64px;
 
         .item{
@@ -481,6 +486,130 @@
         }
     }
 }
+
+// ABOUT PAGE
+
+.aboutHeroContainer{
+    background-color: $accentColor;
+    padding: 0 64px;
+    height: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1{
+        font-size: map-get($FontSize, headingBig );
+        font-weight: bolder;
+        text-align: center;
+        color: $primaryColor;
+    }
+
+    p{
+        max-width: 950px;
+        color: $primaryColor;
+    }
+}
+
+
+.aboutContainer{
+    padding: 0 64px;
+    margin-top: 32px;
+    color: $secondaryColor;
+
+    h3{
+        font-weight: bold;
+    }
+    p{
+        line-height: 30px;
+    }
+
+    .imageContainer{
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 50%;
+            margin-left: 12px;
+           
+        }
+    }
+    
+}
+
+.ourMissionContainer{
+
+    padding: 0 64px;
+    margin-top: 128px;
+   
+    img{
+        width: 50%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    h3{
+        font-weight: bold;
+        color: $accentColor;
+    }
+    p{
+        margin-top: 32px;
+        line-height: 30px;
+        color: $secondaryColor;
+    }
+
+    .imageContainer{
+
+        img{
+            width: 100%;
+            margin-left: 12px;
+           
+        }
+    }
+}
+
+.ourTeamContainer{
+    padding: 0 64px;
+    margin-top: 128px;
+
+    h3{
+        font-weight: bolder;
+        color: $accentColor;
+    }
+}
+
+
+.owl-Team{
+    padding: 0 64px;
+
+    .item{
+        border: 1px solid gray;
+        
+        p{
+            font-size: map-get($FontSize, small );
+            padding: 5px;
+        }
+
+        img{
+            padding: 5px;
+        }
+
+        .itemText{
+            padding: 5px;
+            h6{
+                color: $accentColor;
+            }
+            p{
+                margin-top: -10px;
+                font-size: map-get($FontSize, small );
+            }
+        }
+    }
+
+}
+
 
 footer{
 
@@ -977,7 +1106,7 @@ footer{
             background-color: $accentColor;
         }
     
-        .owl-carousel{
+        .owl-Products{
             padding: 0 32px;
     
             .item{

@@ -23,6 +23,10 @@
   justify-content: center;
   margin-bottom: 0;
 }
+.headerMain .navLinks a {
+  text-decoration: none;
+  color: #313131;
+}
 .headerMain .navLinks .navLink {
   margin-left: 20px;
   font-size: 15px;
@@ -95,7 +99,7 @@
   color: #26B3AA;
 }
 .shortAboutContainer .shortAboutTop .satLeft:hover {
-  scale: 0.9;
+  scale: 0.96;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -127,7 +131,7 @@
   font-size: 20px;
 }
 .shortAboutContainer .shortAboutTop .satRight:hover {
-  scale: 0.9;
+  scale: 0.96;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -150,7 +154,7 @@
   border-radius: 55px;
 }
 .shortAboutContainer .shortAboutMiddle .samLeft:hover {
-  scale: 0.9;
+  scale: 0.96;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -179,7 +183,7 @@
   font-size: 20px;
 }
 .shortAboutContainer .shortAboutMiddle .samRight:hover {
-  scale: 0.9;
+  scale: 0.96;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -205,7 +209,7 @@
   font-size: 20px;
 }
 .shortAboutContainer .shortAboutBottom .sabLeft:hover {
-  scale: 0.9;
+  scale: 0.96;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -227,7 +231,7 @@
   font-size: 20px;
 }
 .shortAboutContainer .shortAboutBottom .sabmLeft:hover {
-  scale: 0.9;
+  scale: 0.96;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -242,7 +246,7 @@
   border-radius: 45px;
 }
 .shortAboutContainer .shortAboutBottom .sabRight:hover {
-  scale: 0.9;
+  scale: 0.96;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -327,28 +331,28 @@
   height: 10px;
   background-color: #26B3AA;
 }
-.productSliderContainer .owl-carousel {
+.productSliderContainer .owl-Products {
   padding: 0 64px;
 }
-.productSliderContainer .owl-carousel .item {
+.productSliderContainer .owl-Products .item {
   border-radius: 25px;
   background-color: rgb(247, 247, 247);
 }
-.productSliderContainer .owl-carousel .item .itemImage {
+.productSliderContainer .owl-Products .item .itemImage {
   padding: 10px;
   border-radius: 20px;
 }
-.productSliderContainer .owl-carousel .item .itemImage img {
+.productSliderContainer .owl-Products .item .itemImage img {
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
 }
-.productSliderContainer .owl-carousel .item .itemText p {
+.productSliderContainer .owl-Products .item .itemText p {
   padding: 0 10px;
   font-size: 20px;
 }
-.productSliderContainer .owl-carousel .item:hover {
+.productSliderContainer .owl-Products .item:hover {
   cursor: pointer;
   scale: 0.98;
   transition: all 0.2s ease-in-out;
@@ -390,6 +394,105 @@
 .mailandPhone .mailContainer p {
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.aboutHeroContainer {
+  background-color: #26B3AA;
+  padding: 0 64px;
+  height: 500px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.aboutHeroContainer h1 {
+  font-size: 65px;
+  font-weight: bolder;
+  text-align: center;
+  color: #ffffff;
+}
+.aboutHeroContainer p {
+  max-width: 950px;
+  color: #ffffff;
+}
+
+.aboutContainer {
+  padding: 0 64px;
+  margin-top: 32px;
+  color: #3877B7;
+}
+.aboutContainer h3 {
+  font-weight: bold;
+}
+.aboutContainer p {
+  line-height: 30px;
+}
+.aboutContainer .imageContainer {
+  display: flex;
+  justify-content: center;
+}
+.aboutContainer .imageContainer img {
+  width: 50%;
+  margin-left: 12px;
+}
+
+.ourMissionContainer {
+  padding: 0 64px;
+  margin-top: 128px;
+}
+.ourMissionContainer img {
+  width: 50%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ourMissionContainer h3 {
+  font-weight: bold;
+  color: #26B3AA;
+}
+.ourMissionContainer p {
+  margin-top: 32px;
+  line-height: 30px;
+  color: #3877B7;
+}
+.ourMissionContainer .imageContainer img {
+  width: 100%;
+  margin-left: 12px;
+}
+
+.ourTeamContainer {
+  padding: 0 64px;
+  margin-top: 128px;
+}
+.ourTeamContainer h3 {
+  font-weight: bolder;
+  color: #26B3AA;
+}
+
+.owl-Team {
+  padding: 0 64px;
+}
+.owl-Team .item {
+  border: 1px solid gray;
+}
+.owl-Team .item p {
+  font-size: 12px;
+  padding: 5px;
+}
+.owl-Team .item img {
+  padding: 5px;
+}
+.owl-Team .item .itemText {
+  padding: 5px;
+}
+.owl-Team .item .itemText h6 {
+  color: #26B3AA;
+}
+.owl-Team .item .itemText p {
+  margin-top: -10px;
+  font-size: 12px;
 }
 
 footer {
@@ -730,28 +833,28 @@ footer .footerLinks p {
     height: 10px;
     background-color: #26B3AA;
   }
-  .productSliderContainer .owl-carousel {
+  .productSliderContainer .owl-Products {
     padding: 0 32px;
   }
-  .productSliderContainer .owl-carousel .item {
+  .productSliderContainer .owl-Products .item {
     border-radius: 25px;
     background-color: rgb(247, 247, 247);
   }
-  .productSliderContainer .owl-carousel .item .itemImage {
+  .productSliderContainer .owl-Products .item .itemImage {
     padding: 10px;
     border-radius: 20px;
   }
-  .productSliderContainer .owl-carousel .item .itemImage img {
+  .productSliderContainer .owl-Products .item .itemImage img {
     border-radius: 20px;
     -o-object-fit: cover;
        object-fit: cover;
     height: 200px;
   }
-  .productSliderContainer .owl-carousel .item .itemText p {
+  .productSliderContainer .owl-Products .item .itemText p {
     padding: 0 10px;
     font-size: 20px;
   }
-  .productSliderContainer .owl-carousel .item:hover {
+  .productSliderContainer .owl-Products .item:hover {
     cursor: pointer;
     scale: 0.98;
     transition: all 0.2s ease-in-out;
