@@ -884,4 +884,51 @@ footer .footerLinks p {
     margin-top: 10px;
     margin-left: 10px;
   }
+  .aboutHeroContainer {
+    padding: 0 32px;
+  }
+  .aboutHeroContainer h1 {
+    font-size: 35px;
+  }
+  .aboutHeroContainer p {
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 12px;
+  }
+  .aboutContainer {
+    padding: 0 32px;
+  }
+  .aboutContainer h3 {
+    font-size: 20px;
+  }
+  .aboutContainer p {
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 12px;
+  }
+  .ourMissionContainer {
+    margin-top: 64px;
+    padding: 0 32px;
+  }
+  .ourMissionContainer h3 {
+    font-size: 20px;
+  }
+  .ourMissionContainer img {
+    width: 100%;
+    height: 150px;
+  }
+  .ourMissionContainer p {
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 12px;
+  }
+  .ourMissionContainer .imageContainer img {
+    margin-left: 0;
+  }
+  .ourTeamContainer {
+    padding: 0 32px;
+  }
+  .ourTeamContainer .owl-Team {
+    padding: 0;
+  }
 }/*# sourceMappingURL=Styles.css.map */
