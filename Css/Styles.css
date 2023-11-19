@@ -34,7 +34,6 @@
 }
 .headerMain .navLinks a:is(:link, :active, :visited).active {
   background-color: #26B3AA;
-  text-align: center;
   color: #ffffff;
   border-radius: 25px;
   width: 90px;
@@ -43,6 +42,15 @@
 .headerMain .navLinks .navLink {
   font-size: 15px;
   cursor: pointer;
+}
+.headerMain .hamburgerMain {
+  display: none;
+}
+.headerMain .hamburgerMain .hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #313131;
+  margin-top: 3px;
 }
 
 .heroMain {
@@ -546,7 +554,34 @@ footer .footerLinks p {
 }
 @media screen and (max-width: 768px) {
   .headerMain .navLinks {
-    display: none;
+    position: fixed;
+    right: 100%;
+    top: 90px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 5px;
+  }
+  .headerMain .navLinks.active {
+    right: 0;
+  }
+  .headerMain .hamburgerMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerMain .hamburgerMain.active .hamburger:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.1s;
+  }
+  .headerMain .hamburgerMain.active .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+  .headerMain .hamburgerMain.active .hamburger:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.1s;
   }
   .shortAboutContainer .shortAboutTop {
     flex-direction: column;
@@ -673,7 +708,34 @@ footer .footerLinks p {
 }
 @media screen and (max-width: 425px) {
   .headerMain .navLinks {
-    display: none;
+    position: fixed;
+    right: 100%;
+    top: 90px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 5px;
+  }
+  .headerMain .navLinks.active {
+    right: 0;
+  }
+  .headerMain .hamburgerMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerMain .hamburgerMain.active .hamburger:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    transition: 0.1s;
+  }
+  .headerMain .hamburgerMain.active .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+  .headerMain .hamburgerMain.active .hamburger:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.1s;
   }
   .shortAboutContainer {
     padding: 0 24px;
