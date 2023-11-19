@@ -30,14 +30,30 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 0;
+       
 
         a{
             text-decoration: none;
             color: #313131;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            padding: 7px;
+            
+        }
+
+        a:is(:link,:active,:visited).active{
+            background-color: $accentColor;
+            text-align: center;
+            color: $primaryColor;
+            border-radius: 25px;
+            width: 90px;
+            transition: all 0.5s ease-in-out;
         }
 
         .navLink{
-            margin-left: 20px;
+            
             font-size: map-get($FontSize, regular);
             cursor: pointer;
         }

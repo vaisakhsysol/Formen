@@ -26,9 +26,21 @@
 .headerMain .navLinks a {
   text-decoration: none;
   color: #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  padding: 7px;
+}
+.headerMain .navLinks a:is(:link, :active, :visited).active {
+  background-color: #26B3AA;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 90px;
+  transition: all 0.5s ease-in-out;
 }
 .headerMain .navLinks .navLink {
-  margin-left: 20px;
   font-size: 15px;
   cursor: pointer;
 }
