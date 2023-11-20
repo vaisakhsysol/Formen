@@ -7,7 +7,6 @@ hamburgerMain.addEventListener('click',()=>{
     hamburgerMain.classList.toggle('active')
     navLinks.classList.toggle('active')
 })
-
 navLink.forEach(link => {
     link.addEventListener('click',()=>{
         hamburgerMain.classList.remove('active')

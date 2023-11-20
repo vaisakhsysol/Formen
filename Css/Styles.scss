@@ -639,6 +639,94 @@
 
 }
 
+.ourClientsContainer{
+    margin-top: 128px;
+    padding: 0 64px;
+
+    h3{
+        color: $secondaryColor;
+        font-weight: bold;
+    }
+
+    .clientsGridContainer{
+        .box {
+            background: grey;
+            border: 1px solid $textColor;
+            // padding: 5px;
+          }
+          .wrapper {
+             display: grid;
+             grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            grid-column-gap: 6px;
+            grid-row-gap:6px;
+
+            .box{
+
+                overflow: hidden;
+                height: 300px;
+                cursor: pointer;
+
+                img{
+                    max-width: 200px;
+                    min-width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+
+                img:hover{
+                    scale: 1.1;
+                    transition: 0.3s all ease-in-out;
+                }
+
+                .overlayClients{
+                    overflow: hidden;
+                    height: 300px;
+                    // max-width: 200px;
+                    position: relative;
+                    top: -300px ;
+                    min-width: 100%;
+                    width: 100%;
+                    display: none;
+                    background-color: #313131a6;
+                    
+                    
+
+                    h3{
+                        text-align: center;
+                        margin-top: 24px;
+                        color: $primaryColor;
+                    }
+
+                    p{
+                        padding: 20px;
+                        color: $primaryColor;
+                        font-size: map-get($FontSize, small );
+                    }
+                }
+
+                .overlayClients.active{
+                    display: block;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                h4{
+                    position: relative;
+                    top: -60px;
+                    color: $primaryColor;
+                    text-align: center;
+                }
+
+            }
+          }
+    }
+}
+
+.box 
+
+.box:hover .overlayClients {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 footer{
 

@@ -515,6 +515,76 @@
   font-size: 12px;
 }
 
+.ourClientsContainer {
+  margin-top: 128px;
+  padding: 0 64px;
+}
+.ourClientsContainer h3 {
+  color: #3877B7;
+  font-weight: bold;
+}
+.ourClientsContainer .clientsGridContainer .box {
+  background: grey;
+  border: 1px solid #171719;
+}
+.ourClientsContainer .clientsGridContainer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+}
+.ourClientsContainer .clientsGridContainer .wrapper .box {
+  overflow: hidden;
+  height: 300px;
+  cursor: pointer;
+}
+.ourClientsContainer .clientsGridContainer .wrapper .box img {
+  max-width: 200px;
+  min-width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ourClientsContainer .clientsGridContainer .wrapper .box img:hover {
+  scale: 1.1;
+  transition: 0.3s all ease-in-out;
+}
+.ourClientsContainer .clientsGridContainer .wrapper .box .overlayClients {
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+  top: -300px;
+  min-width: 100%;
+  width: 100%;
+  display: none;
+  background-color: rgba(49, 49, 49, 0.6509803922);
+}
+.ourClientsContainer .clientsGridContainer .wrapper .box .overlayClients h3 {
+  text-align: center;
+  margin-top: 24px;
+  color: #ffffff;
+}
+.ourClientsContainer .clientsGridContainer .wrapper .box .overlayClients p {
+  padding: 20px;
+  color: #ffffff;
+  font-size: 12px;
+}
+.ourClientsContainer .clientsGridContainer .wrapper .box .overlayClients.active {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.ourClientsContainer .clientsGridContainer .wrapper .box h4 {
+  position: relative;
+  top: -60px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.box .box:hover .overlayClients {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 footer {
   margin-top: 128px;
   font-family: "Signika", sans-serif;
