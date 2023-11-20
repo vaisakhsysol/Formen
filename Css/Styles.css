@@ -428,6 +428,7 @@
   text-align: center;
 }
 .aboutHeroContainer h1 {
+  margin-top: 32px;
   font-size: 65px;
   font-weight: bolder;
   text-align: center;
@@ -580,9 +581,39 @@
   text-align: center;
 }
 
-.box .box:hover .overlayClients {
-  opacity: 1;
-  pointer-events: auto;
+.ourProductsHeading {
+  padding: 0 64px;
+}
+.ourProductsHeading h3 {
+  font-weight: bolder;
+  margin-top: 128px;
+  color: #3877B7;
+}
+
+.productsGridContainer .productsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  padding: 0 64px;
+}
+.productsGridContainer .productsContainer .product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 20px 20px 20px 20px;
+}
+.productsGridContainer .productsContainer .product p {
+  color: #26B3AA;
+  margin: 0;
+}
+.productsGridContainer .productsContainer .product:hover {
+  background-color: #26B3AA;
+  cursor: pointer;
+}
+.productsGridContainer .productsContainer .product:hover p {
+  color: #ffffff;
 }
 
 footer {
@@ -1032,6 +1063,7 @@ footer .footerLinks p {
     padding: 0 32px;
   }
   .aboutHeroContainer h1 {
+    margin-top: 56px;
     font-size: 35px;
   }
   .aboutHeroContainer p {
