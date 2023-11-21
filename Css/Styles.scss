@@ -943,8 +943,23 @@ footer{
             font-size: map-get($FontSize, regular );
         }
     }
-}
 
+    
+}
+.footerLink{
+    display: flex;
+    // flex-direction: column-reverse;
+    p{
+        font-size: map-get($FontSize, small);
+    }
+
+}
+.footerIcons{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 // medium Display Screen
 
