@@ -786,6 +786,145 @@
     @extend .galleryHeadingContainer;
 }
 
+.orderContainer{
+    margin: 0 64px;
+    border: 2px solid $secondaryColor;
+
+    .orderInputsContainer{
+        padding: 20px;
+
+        .inputsTop{
+            display: flex;
+            justify-content: space-between;
+
+            .inputleft{
+                display: flex;
+                flex-direction: column;
+                width: 49%;    
+                label{
+                    max-width: 120px;
+                    background-color: $primaryColor;
+                    color: $accentColor;
+                    font-size: map-get($FontSize, small);
+                    text-align: center;
+                    position: relative;
+                    bottom: -10px;
+                    left: 10px;
+                }
+                input{
+                    padding: 8px;
+                    border: 1px solid gray;
+                }
+            }
+    
+            .inputright{
+                display: flex;
+                flex-direction: column;
+                width: 49%;    
+                label{
+                    max-width: 120px;
+                    background-color: $primaryColor;
+                    color: $accentColor;
+                    font-size: map-get($FontSize, small);
+                    text-align: center;
+                    position: relative;
+                    bottom: -10px;
+                    left: 10px;
+                }
+                input{
+                    padding: 8px;
+                    border: 1px solid gray;
+                }
+            }
+
+            
+        }
+
+        .inputsMid{
+            margin-top: 8px;
+            display: flex;
+            flex-direction: column;
+
+            label{
+                max-width: 60px;
+                background-color: $primaryColor;
+                color: $accentColor;
+                font-size: map-get($FontSize, small);
+                text-align: center;
+                position: relative;
+                bottom: -10px;
+                left: 10px;
+            }
+            textarea{
+                padding: 8px;
+                border: 1px solid gray;
+               
+                
+            }
+        }
+
+        .inputDate{
+            margin-top: 16px;
+            color: $accentColor;
+            display: flex;
+            align-items: center;
+           p{
+            margin-bottom: 0;
+            margin-right: 12px;
+           }
+        }
+        
+    }
+
+    .selectProductContainer{
+        .selectProductHeading{
+            padding: 20px 20px;
+            h3{
+                color: $secondaryColor;
+            }
+        }
+
+        .wrapper{
+            padding:20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-column-gap: 6px;
+            grid-row-gap:6px;
+    
+}
+            .box {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                // justify-content: center;
+                background: $primaryColor;
+                border: 1px solid gray;
+                padding: 20px 20px 20px 20px;
+                
+                .checkbox{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 24px;
+                }
+
+                p{
+                    margin-bottom: 0;
+                    color: $accentColor;
+                }
+
+              }
+        }
+
+    button{
+      
+        width: 100%;
+        background-color: $secondaryColor;
+        padding: 10px;
+        border: 0;
+        color: $primaryColor;
+    }
+}
+
 footer{
 
     margin-top: 128px;
@@ -1488,4 +1627,54 @@ footer{
             padding: 0;
         }
     }
+
+    .orderContainer{
+        margin: 0 16px;
+        border: 2px solid $secondaryColor;
+    
+        .orderInputsContainer{
+            padding: 20px;
+    
+            .inputsTop{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .inputleft{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;    
+                    input{
+                        padding: 8px;
+                        border: 1px solid gray;
+                    }
+                }
+        
+                .inputright{
+                    display: flex;
+                    flex-direction: column;
+
+                    width: 100%;    
+                    label{
+                        max-width: 120px;
+                        background-color: $primaryColor;
+                        color: $accentColor;
+                        font-size: map-get($FontSize, small);
+                        text-align: center;
+                        position: relative;
+                        bottom: -10px;
+                        left: 10px;
+                    }
+                    input{
+                        padding: 8px;
+                        border: 1px solid gray;
+                    }
+                }
+    
+                
+            }
+            
+        }
+    }
  }
+ 

@@ -631,6 +631,122 @@
   width: 100%;
 }
 
+.orderContainer {
+  margin: 0 64px;
+  border: 2px solid #3877B7;
+}
+.orderContainer .orderInputsContainer {
+  padding: 20px;
+}
+.orderContainer .orderInputsContainer .inputsTop {
+  display: flex;
+  justify-content: space-between;
+}
+.orderContainer .orderInputsContainer .inputsTop .inputleft {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.orderContainer .orderInputsContainer .inputsTop .inputleft label {
+  max-width: 120px;
+  background-color: #ffffff;
+  color: #26B3AA;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+  left: 10px;
+}
+.orderContainer .orderInputsContainer .inputsTop .inputleft input {
+  padding: 8px;
+  border: 1px solid gray;
+}
+.orderContainer .orderInputsContainer .inputsTop .inputright {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.orderContainer .orderInputsContainer .inputsTop .inputright label {
+  max-width: 120px;
+  background-color: #ffffff;
+  color: #26B3AA;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+  left: 10px;
+}
+.orderContainer .orderInputsContainer .inputsTop .inputright input {
+  padding: 8px;
+  border: 1px solid gray;
+}
+.orderContainer .orderInputsContainer .inputsMid {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.orderContainer .orderInputsContainer .inputsMid label {
+  max-width: 60px;
+  background-color: #ffffff;
+  color: #26B3AA;
+  font-size: 12px;
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+  left: 10px;
+}
+.orderContainer .orderInputsContainer .inputsMid textarea {
+  padding: 8px;
+  border: 1px solid gray;
+}
+.orderContainer .orderInputsContainer .inputDate {
+  margin-top: 16px;
+  color: #26B3AA;
+  display: flex;
+  align-items: center;
+}
+.orderContainer .orderInputsContainer .inputDate p {
+  margin-bottom: 0;
+  margin-right: 12px;
+}
+.orderContainer .selectProductContainer .selectProductHeading {
+  padding: 20px 20px;
+}
+.orderContainer .selectProductContainer .selectProductHeading h3 {
+  color: #3877B7;
+}
+.orderContainer .selectProductContainer .wrapper {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+}
+.orderContainer .selectProductContainer .box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid gray;
+  padding: 20px 20px 20px 20px;
+}
+.orderContainer .selectProductContainer .box .checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 24px;
+}
+.orderContainer .selectProductContainer .box p {
+  margin-bottom: 0;
+  color: #26B3AA;
+}
+.orderContainer button {
+  width: 100%;
+  background-color: #3877B7;
+  padding: 10px;
+  border: 0;
+  color: #ffffff;
+}
+
 footer {
   margin-top: 128px;
   font-family: "Signika", sans-serif;
@@ -1121,5 +1237,45 @@ footer .footerLinks p {
   }
   .ourTeamContainer .owl-Team {
     padding: 0;
+  }
+  .orderContainer {
+    margin: 0 16px;
+    border: 2px solid #3877B7;
+  }
+  .orderContainer .orderInputsContainer {
+    padding: 20px;
+  }
+  .orderContainer .orderInputsContainer .inputsTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .orderContainer .orderInputsContainer .inputsTop .inputleft {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .orderContainer .orderInputsContainer .inputsTop .inputleft input {
+    padding: 8px;
+    border: 1px solid gray;
+  }
+  .orderContainer .orderInputsContainer .inputsTop .inputright {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .orderContainer .orderInputsContainer .inputsTop .inputright label {
+    max-width: 120px;
+    background-color: #ffffff;
+    color: #26B3AA;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    bottom: -10px;
+    left: 10px;
+  }
+  .orderContainer .orderInputsContainer .inputsTop .inputright input {
+    padding: 8px;
+    border: 1px solid gray;
   }
 }/*# sourceMappingURL=Styles.css.map */
