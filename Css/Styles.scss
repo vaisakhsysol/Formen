@@ -724,12 +724,7 @@
 
 
 .ourProductsHeading{
-    padding: 0 64px;
-    h3{
-        font-weight: bolder;
-        margin-top: 128px;
-        color: $secondaryColor;
-    }
+    @extend .galleryHeadingContainer;
 }
 
 .productsGridContainer{
@@ -760,11 +755,36 @@
         }
       }
      }
-    
-      
 }
 
+.galleryHeadingContainer{
+    padding: 0 64px;
+    h3{
+        font-weight: bolder;
+        margin-top: 128px;
+        color: $secondaryColor;
+    }   
+}
 
+.galleryContainer{
+    padding: 0 64px;
+    display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap:10px;
+
+    .box {
+        background: grey;
+        img{
+            min-width: 200px;
+            width: 100%;
+        }
+      }
+}
+
+.orderHeadingContainer{
+    @extend .galleryHeadingContainer;
+}
 
 footer{
 
