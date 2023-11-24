@@ -932,6 +932,7 @@
 .contactUsContainer{
     border: 2px solid $secondaryColor;
     margin: 0 64px;
+    display: flex;
 
     .contactUsLeft{
             padding: 30px;
@@ -967,6 +968,71 @@
             }
     }
 
+    .contactUsRight{
+        padding: 30px;
+        width: 70%;
+
+        h4{
+            color: $accentColor;
+            font-weight: bolder;
+        }
+
+        .contactUsInputTop{
+            font-size: map-get($FontSize, small);
+            margin-top: 12px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .contactUsInput{
+                display: flex;
+                flex-direction: column;
+                width: 49%;
+                color: $accentColor;
+
+                input{
+                    padding: 8px;
+                    border: 1px solid rgba(128, 128, 128, 0.288);
+                }
+            }
+        }
+
+        .subject{
+            font-size: map-get($FontSize, small);
+            display: flex;
+            flex-direction: column;
+            margin-top: 12px;
+            color: $accentColor;
+
+            input{
+                padding: 8px;
+                border: 1px solid rgba(128, 128, 128, 0.288);
+
+            }
+        }
+
+        .messageTextArea{
+            font-size: map-get($FontSize, small);
+            display: flex;
+            flex-direction: column;
+            color: $accentColor;
+            margin-top: 12px;
+
+            textarea{
+                border: 1px solid rgba(128, 128, 128, 0.288);
+
+            }
+        }
+
+        button{
+            width: 100%;
+            padding: 8px;
+            border: none;
+            margin-top: 8px;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+        }
+    }
 }
 footer{
 
@@ -1299,7 +1365,69 @@ footer{
     }
 }
 
+.contactUsHeading{
+    padding:0 32px;
+}
 
+.contactUsContainer{
+    border: 2px solid $secondaryColor;
+    margin: 0 32px;
+    display: flex;
+
+    .contactUsLeft{
+            padding: 16px;
+            h3{
+            
+                font-size: map-get($FontSize, regular);
+                
+            }
+
+            .contactIconandText{
+             
+                font-size: map-get($FontSize, small);
+            
+
+            }
+
+            .contactIcons{
+                padding: 0 24px;
+                margin-top: 144px;
+                display: flex;
+                justify-content: space-between;
+            }
+    }
+
+    .contactUsRight{
+        padding: 16px;
+        width: 70%;
+
+        h4{
+            color: $accentColor;
+            font-weight: bolder;
+            font-size: map-get($FontSize, regular );
+        }
+
+        .contactUsInputTop{
+            font-size: map-get($FontSize, small);
+            margin-top: 12px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .contactUsInput{
+                display: flex;
+                flex-direction: column;
+                width: 49%;
+                color: $accentColor;
+
+                input{
+                    padding: 8px;
+                    border: 1px solid rgba(128, 128, 128, 0.288);
+                }
+            }
+        }
+    }
+}
     
  }
 
@@ -1738,5 +1866,71 @@ footer{
             
         }
     }
- }
+
+    .contactUsHeading{
+        padding: 0 32px;
+    }
+    .contactUsContainer{
+        border: 2px solid $secondaryColor;
+        margin: 0 32px;
+        display: flex;
+    
+        .contactUsLeft{
+            display: none;
+                padding: 8px;
+                h3{
+                
+                    font-size: map-get($FontSize, regular);
+                    
+                }
+    
+                .contactIconandText{
+                 
+                    font-size: map-get($FontSize, small);
+                
+    
+                }
+    
+                .contactIcons{
+                    padding: 0 24px;
+                    margin-top: 144px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+        }
+    
+        .contactUsRight{
+            padding: 16px;
+            width: 100%;
+    
+            h4{
+                color: $accentColor;
+                font-weight: bolder;
+                font-size: map-get($FontSize, regular );
+            }
+    
+            .contactUsInputTop{
+                font-size: map-get($FontSize, small);
+                margin-top: 12px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+    
+                .contactUsInput{
+                    display: flex;
+                    flex-direction: column;
+                    width: 49%;
+                    color: $accentColor;
+    
+                    input{
+                        padding: 8px;
+                        border: 1px solid rgba(128, 128, 128, 0.288);
+                    }
+                }
+            }
+        }
+    }
+        
+     }
+
  
