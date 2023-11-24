@@ -607,10 +607,10 @@
   color: #ffffff;
 }
 
-.galleryHeadingContainer, .orderHeadingContainer, .ourProductsHeading {
+.galleryHeadingContainer, .contactUsHeading, .orderHeadingContainer, .ourProductsHeading {
   padding: 0 64px;
 }
-.galleryHeadingContainer h3, .orderHeadingContainer h3, .ourProductsHeading h3 {
+.galleryHeadingContainer h3, .contactUsHeading h3, .orderHeadingContainer h3, .ourProductsHeading h3 {
   font-weight: bolder;
   margin-top: 128px;
   color: #3877B7;
@@ -745,6 +745,39 @@
   padding: 10px;
   border: 0;
   color: #ffffff;
+}
+
+.contactUsContainer {
+  border: 2px solid #3877B7;
+  margin: 0 64px;
+}
+.contactUsContainer .contactUsLeft {
+  padding: 30px;
+  max-width: 30%;
+  height: 500px;
+  background-size: cover;
+  opacity: 0.5;
+  background-image: url("../Assets/Images/medMan1.jpg"), linear-gradient(#00461c, #00461c);
+  background-blend-mode: overlay;
+  mix-blend-mode: multiply;
+}
+.contactUsContainer .contactUsLeft h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 32px;
+}
+.contactUsContainer .contactUsLeft .contactIconandText {
+  margin-top: 4px;
+  display: flex;
+  font-size: 15px;
+  color: #ffffff;
+}
+.contactUsContainer .contactUsLeft .contactIcons {
+  padding: 0 64px;
+  margin-top: 144px;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
