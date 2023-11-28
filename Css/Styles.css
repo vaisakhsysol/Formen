@@ -60,7 +60,8 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 500px;
+  height: 1100px;
+  width: 100%;
 }
 .heroMain .enquireMain {
   position: relative;
@@ -106,7 +107,7 @@
   width: 50%;
   max-width: 50%;
   border: 1px solid #ececec;
-  border-radius: 45px;
+  border-radius: 25px;
   padding: 30px;
   margin-bottom: 24px;
   margin-right: 10px;
@@ -130,7 +131,7 @@
   padding: 5px;
   height: 200px;
   border: 1px solid #ececec;
-  border-radius: 45px;
+  border-radius: 25px;
   color: #ffffff;
   background-color: #3877B7;
 }
@@ -171,7 +172,7 @@
      object-fit: cover;
   height: 200px;
   width: 100%;
-  border-radius: 55px;
+  border-radius: 25px;
 }
 .shortAboutContainer .shortAboutMiddle .samLeft:hover {
   scale: 0.96;
@@ -185,7 +186,7 @@
   padding: 10px;
   height: 200px;
   border: 1px solid #ececec;
-  border-radius: 45px;
+  border-radius: 25px;
 }
 .shortAboutContainer .shortAboutMiddle .samRight .samTopNumber {
   display: flex;
@@ -215,7 +216,7 @@
   padding: 10px;
   width: 30%;
   border: 1px solid #ececec;
-  border-radius: 45px;
+  border-radius: 25px;
   background-color: #26B3AA;
 }
 .shortAboutContainer .shortAboutBottom .sabLeft .sabLeftNumber {
@@ -237,7 +238,7 @@
   padding: 10px;
   width: 30%;
   border: 1px solid #ececec;
-  border-radius: 45px;
+  border-radius: 25px;
   background-color: #ffffff;
 }
 .shortAboutContainer .shortAboutBottom .sabmLeft .sabmLeftNumber {
@@ -263,7 +264,7 @@
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 45px;
+  border-radius: 25px;
 }
 .shortAboutContainer .shortAboutBottom .sabRight:hover {
   scale: 0.96;
@@ -325,7 +326,7 @@
   font-size: 35px;
 }
 .videoContainer .bubble {
-  border-radius: 50px;
+  border-radius: 25px;
   width: 10px;
   height: 10px;
   background-color: #26B3AA;
@@ -333,7 +334,7 @@
 .videoContainer video {
   width: 100%;
   height: 500px;
-  border-radius: 45px;
+  border-radius: 25px;
 }
 
 .productSliderContainer {
@@ -864,6 +865,17 @@ footer .footerLinks p {
 }
 
 @media screen and (max-width: 1024px) {
+  .heroMain {
+    width: 100%;
+  }
+  .heroMain img {
+    margin-top: 80px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 700px;
+    width: 100%;
+  }
   .shortAboutContainer .shortAboutTop .satLeft p {
     font-size: 35px;
   }
@@ -887,6 +899,49 @@ footer .footerLinks p {
   }
 }
 @media screen and (max-width: 768px) {
+  .heroMain {
+    width: 100%;
+  }
+  .heroMain img {
+    margin-top: 80px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+  .heroMain .enquireMain {
+    position: relative;
+    top: -90px;
+  }
+  .heroMain .enquireMain .enquireBtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    width: 250px;
+    margin: 0px 64px;
+  }
+  .heroMain .enquireMain .enquireBtn .enquireCircleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #3877B7;
+  }
+  .heroMain .enquireMain .enquireBtn:hover {
+    transition: all 0.3s ease-in-out;
+    border-bottom: 10px solid black;
+  }
+  .heroMain .enquireMain .enquireBtn:hover svg {
+    transform: rotate(-20deg);
+  }
   .headerMain .navLinks {
     position: fixed;
     right: 100%;
@@ -1119,6 +1174,51 @@ footer .footerLinks p {
   .headerMain .hamburgerMain.active .hamburger:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
     transition: 0.1s;
+  }
+  .heroMain {
+    width: 100%;
+  }
+  .heroMain img {
+    margin-top: 80px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+    width: 100%;
+  }
+  .heroMain .enquireMain {
+    position: relative;
+    top: -60px;
+    display: flex;
+    justify-content: center;
+  }
+  .heroMain .enquireMain .enquireBtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    width: 210px;
+    margin: 0px 64px;
+  }
+  .heroMain .enquireMain .enquireBtn .enquireCircleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #3877B7;
+  }
+  .heroMain .enquireMain .enquireBtn:hover {
+    transition: all 0.3s ease-in-out;
+    border-bottom: 10px solid black;
+  }
+  .heroMain .enquireMain .enquireBtn:hover svg {
+    transform: rotate(-20deg);
   }
   .shortAboutContainer {
     padding: 0 24px;

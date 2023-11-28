@@ -80,7 +80,8 @@
     img{
         width: 100%;
         object-fit: cover;
-        height: 500px;
+        height: 1100px;
+        width: 100%;
     }
 
     .enquireMain{
@@ -109,8 +110,6 @@
                 border-radius: 50px;
                 // border: none;
                 background-color: $secondaryColor;
-            
-            
             }
 
             
@@ -1084,6 +1083,18 @@ footer{
 
 
 @include mdDisplay{
+
+    .heroMain{
+        width: 100%;
+    
+        img{
+            margin-top: 80px;
+            width: 100%;
+            object-fit: cover;
+            height: 700px;
+            width: 100%;
+        }
+    }
     .shortAboutContainer{
         .shortAboutTop{
             .satLeft{
@@ -1161,6 +1172,61 @@ footer{
 
 @include tabDisplay{
 
+    .heroMain{
+        width: 100%;
+    
+        img{
+            margin-top: 80px;
+            width: 100%;
+            object-fit: cover;
+            height: 400px;
+            width: 100%;
+        }
+
+        .enquireMain{
+
+            position: relative;
+            top: -90px;
+    
+            .enquireBtn{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: map-get($FontSize, medium );
+                padding: 10px;
+                border: none;
+                border-radius: 50px;
+                background-color: $primaryColor;
+                width: 250px;
+                margin: 0px 64px;
+                
+                .enquireCircleIcon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50px;
+                    // border: none;
+                    background-color: $secondaryColor;
+                }
+    
+                
+                &:hover{
+                    transition: all 0.3s ease-in-out;
+                    border-bottom: 10px solid black;
+    
+                    svg{
+                        transform: rotate(-20deg);
+                    }
+    
+                }
+    
+            }
+          
+        } 
+    }
+    
     .headerMain{
         .navLinks{
             // display: none;
@@ -1488,6 +1554,65 @@ footer{
 
     }
     
+    
+
+    .heroMain{
+        width: 100%;
+    
+        img{
+            margin-top: 80px;
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+
+        .enquireMain{
+
+            position: relative;
+            top: -60px;
+            display: flex;
+            justify-content: center;
+    
+            .enquireBtn{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                font-size: map-get($FontSize, medium );
+                padding: 5px;
+                border: none;
+                border-radius: 50px;
+                background-color: $primaryColor;
+                width: 210px;
+                margin: 0px 64px;
+                
+                .enquireCircleIcon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50px;
+                    // border: none;
+                    background-color: $secondaryColor;
+                }
+    
+                
+                &:hover{
+                    transition: all 0.3s ease-in-out;
+                    border-bottom: 10px solid black;
+    
+                    svg{
+                        transform: rotate(-20deg);
+                    }
+    
+                }
+    
+            }
+          
+        } 
+        
+    } 
 
     .shortAboutContainer{
 
