@@ -1626,8 +1626,6 @@ footer{
             .satLeft{
                 width: 100%;
                 border-radius: 15px;
-
-                padding: 10px;
                 p{
                     padding: 0;
                 }
@@ -1644,9 +1642,10 @@ footer{
                 font-size: map-get($FontSize, medium);
                 margin-top: -10px;
                 border-radius: 15px;
+                padding: 10px;
 
                 p{
-                    padding: 5px;
+                    padding: 0px;
                 }
             }
         }

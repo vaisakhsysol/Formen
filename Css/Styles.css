@@ -1231,7 +1231,6 @@ footer .footerLinks p {
   .shortAboutContainer .shortAboutTop .satLeft {
     width: 100%;
     border-radius: 15px;
-    padding: 10px;
   }
   .shortAboutContainer .shortAboutTop .satLeft p {
     padding: 0;
@@ -1247,9 +1246,10 @@ footer .footerLinks p {
     font-size: 20px;
     margin-top: -10px;
     border-radius: 15px;
+    padding: 10px;
   }
   .shortAboutContainer .shortAboutTop .satRight p {
-    padding: 5px;
+    padding: 0px;
   }
   .shortAboutContainer .shortAboutMiddle {
     margin-top: 10px;
