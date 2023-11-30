@@ -1142,7 +1142,7 @@ footer .footerLinks p {
     border: 1px solid rgba(128, 128, 128, 0.288);
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .headerMain .navLinks {
     position: fixed;
     right: 100%;
@@ -1577,4 +1577,4 @@ footer .footerLinks p {
     padding: 8px;
     border: 1px solid rgba(128, 128, 128, 0.288);
   }
-}/*# sourceMappingURL=Styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
