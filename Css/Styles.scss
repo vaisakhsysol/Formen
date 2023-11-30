@@ -1282,10 +1282,6 @@ footer{
 
             .satLeft{
                 width: 100%;
-            }
-
-            .satLeft{
-                width: 100%;
                 max-width: 100%;
                 font-size: map-get($FontSize, big);
             }
@@ -1294,6 +1290,7 @@ footer{
                 max-width: 100%;
                 font-size: map-get($FontSize, big);
                 margin-top: -10px;
+                height: 300px;
 
                 p{
                     padding: 15px;

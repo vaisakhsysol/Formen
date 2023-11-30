@@ -978,9 +978,6 @@ footer .footerLinks p {
   }
   .shortAboutContainer .shortAboutTop .satLeft {
     width: 100%;
-  }
-  .shortAboutContainer .shortAboutTop .satLeft {
-    width: 100%;
     max-width: 100%;
     font-size: 35px;
   }
@@ -989,6 +986,7 @@ footer .footerLinks p {
     max-width: 100%;
     font-size: 35px;
     margin-top: -10px;
+    height: 300px;
   }
   .shortAboutContainer .shortAboutTop .satRight p {
     padding: 15px;
