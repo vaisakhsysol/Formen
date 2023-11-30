@@ -757,7 +757,7 @@
   height: 500px;
   background-size: cover;
   opacity: 0.5;
-  background-image: url("../Assets/Images/medMan1.jpg"), linear-gradient(#00461c, #00461c);
+  background-image: url("../assets/Images/medMan1.jpg"), linear-gradient(#00461c, #00461c);
   background-blend-mode: overlay;
   mix-blend-mode: multiply;
 }
