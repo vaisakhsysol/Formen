@@ -367,7 +367,7 @@
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 200px;
+  height: 300px;
 }
 .productSliderContainer .owl-Products .item .itemText p {
   padding: 0 10px;
@@ -1579,4 +1579,4 @@ footer .footerLinks p {
     padding: 8px;
     border: 1px solid rgba(128, 128, 128, 0.288);
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=Styles.css.map */
