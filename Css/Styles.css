@@ -162,7 +162,6 @@
 }
 .shortAboutContainer .shortAboutMiddle .samLeft {
   width: 40%;
-  max-width: 40%;
   text-align: center;
   height: 220px;
   max-height: 220px;
@@ -181,7 +180,6 @@
 }
 .shortAboutContainer .shortAboutMiddle .samRight {
   width: 58%;
-  max-width: 58%;
   text-align: center;
   padding: 10px;
   height: 200px;
@@ -993,13 +991,21 @@ footer .footerLinks p {
   }
   .shortAboutContainer .shortAboutMiddle {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .shortAboutContainer .shortAboutMiddle .samLeft {
+    width: 100%;
   }
   .shortAboutContainer .shortAboutMiddle .samLeft img {
     border-radius: 25px;
+    width: 100%;
+    max-width: 100%;
   }
   .shortAboutContainer .shortAboutMiddle .samRight {
     border-radius: 25px;
     height: auto;
+    width: 100%;
   }
   .shortAboutContainer .shortAboutMiddle .samRight .samTopText {
     margin-top: -10px;
