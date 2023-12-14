@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 20px;
-  padding: 7px;
+  padding: 2px;
 }
 .headerMain .navLinks a:is(:link, :active, :visited).active {
   background-color: #26B3AA;
@@ -40,7 +40,7 @@
   transition: all 0.5s ease-in-out;
 }
 .headerMain .navLinks .navLink {
-  font-size: 15px;
+  font-size: 17px;
   cursor: pointer;
 }
 .headerMain .hamburgerMain {
@@ -310,7 +310,7 @@
   font-size: 35px;
 }
 .featuresContainer .featuresMain .featuresTop .featuresTopText .featuresText {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .videoContainer {
@@ -448,6 +448,7 @@
 }
 .aboutContainer p {
   line-height: 30px;
+  font-size: 17px;
 }
 .aboutContainer .imageContainer {
   display: flex;
@@ -496,6 +497,7 @@
 }
 .owl-Team .item {
   border: 1px solid gray;
+  height: 800px;
 }
 .owl-Team .item p {
   font-size: 12px;
@@ -507,7 +509,7 @@
 .owl-Team .item .itemText {
   padding: 5px;
 }
-.owl-Team .item .itemText h6 {
+.owl-Team .item .itemText h5 {
   color: #26B3AA;
 }
 .owl-Team .item .itemText p {
@@ -523,61 +525,26 @@
   color: #3877B7;
   font-weight: bold;
 }
-.ourClientsContainer .clientsGridContainer .box {
-  background: grey;
+.ourClientsContainer .card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem;
   border: 1px solid #171719;
+  background-color: #ffffff;
+  color: #26B3AA;
+  text-align: center;
 }
-.ourClientsContainer .clientsGridContainer .wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-column-gap: 6px;
-  grid-row-gap: 6px;
-}
-.ourClientsContainer .clientsGridContainer .wrapper .box {
-  overflow: hidden;
-  height: 300px;
+.ourClientsContainer .card:hover {
+  background-color: #26B3AA;
+  color: #ffffff;
   cursor: pointer;
 }
-.ourClientsContainer .clientsGridContainer .wrapper .box img {
-  max-width: 200px;
-  min-width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.ourClientsContainer .clientsGridContainer .wrapper .box img:hover {
-  scale: 1.1;
-  transition: 0.3s all ease-in-out;
-}
-.ourClientsContainer .clientsGridContainer .wrapper .box .overlayClients {
-  overflow: hidden;
-  height: 300px;
-  position: relative;
-  top: -300px;
-  min-width: 100%;
-  width: 100%;
-  display: none;
-  background-color: rgba(49, 49, 49, 0.6509803922);
-}
-.ourClientsContainer .clientsGridContainer .wrapper .box .overlayClients h3 {
-  text-align: center;
-  margin-top: 24px;
-  color: #ffffff;
-}
-.ourClientsContainer .clientsGridContainer .wrapper .box .overlayClients p {
-  padding: 20px;
-  color: #ffffff;
-  font-size: 12px;
-}
-.ourClientsContainer .clientsGridContainer .wrapper .box .overlayClients.active {
-  display: block;
-  transition: all 0.3s ease-in-out;
-}
-.ourClientsContainer .clientsGridContainer .wrapper .box h4 {
-  position: relative;
-  top: -60px;
-  color: #ffffff;
-  text-align: center;
+.ourClientsContainer .cards {
+  display: grid;
+  border-radius: 0px;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .productsGridContainer .productsContainer {
@@ -757,7 +724,7 @@
   height: 500px;
   background-size: cover;
   opacity: 0.5;
-  background-image: url("../assets/Images/medMan1.jpg"), linear-gradient(#00461c, #00461c);
+  background-image: url("../Assets/Images/medMan1.jpg"), linear-gradient(#00461c, #00461c);
   background-blend-mode: overlay;
   mix-blend-mode: multiply;
 }
@@ -770,7 +737,7 @@
 .contactUsContainer .contactUsLeft .contactIconandText {
   margin-top: 4px;
   display: flex;
-  font-size: 15px;
+  font-size: 17px;
   color: #ffffff;
 }
 .contactUsContainer .contactUsLeft .contactIcons {
@@ -845,7 +812,7 @@ footer a {
 }
 footer .footerLinks p {
   margin-top: -10px;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .footerLink {
@@ -878,22 +845,22 @@ footer .footerLinks p {
     font-size: 35px;
   }
   .shortAboutContainer .shortAboutTop .satRight .satTopText p {
-    font-size: 15px;
+    font-size: 17px;
   }
   .shortAboutContainer .shortAboutMiddle .samRight .samTopNumber p {
     font-size: 35px;
   }
   .shortAboutContainer .shortAboutMiddle .samRight .samTopText p {
-    font-size: 15px;
+    font-size: 17px;
   }
   .shortAboutContainer .shortAboutBottom .sabLeft .sabLeftNumber p {
     font-size: 35px;
   }
   .shortAboutContainer .shortAboutBottom .sabLeft .sabLeftText p {
-    font-size: 15px;
+    font-size: 17px;
   }
   .shortAboutContainer .shortAboutBottom .sabmLeft .sabmLeftText p {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1075,7 +1042,7 @@ footer .footerLinks p {
     font-size: 35px;
   }
   .featuresContainer .featuresMain .featuresTop .featuresTopText .featuresText {
-    font-size: 15px;
+    font-size: 17px;
   }
   .videoContainer {
     margin-top: 64px;
@@ -1110,7 +1077,7 @@ footer .footerLinks p {
     padding: 16px;
   }
   .contactUsContainer .contactUsLeft h3 {
-    font-size: 15px;
+    font-size: 17px;
   }
   .contactUsContainer .contactUsLeft .contactIconandText {
     font-size: 12px;
@@ -1128,7 +1095,7 @@ footer .footerLinks p {
   .contactUsContainer .contactUsRight h4 {
     color: #26B3AA;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 17px;
   }
   .contactUsContainer .contactUsRight .contactUsInputTop {
     font-size: 12px;
@@ -1146,6 +1113,9 @@ footer .footerLinks p {
   .contactUsContainer .contactUsRight .contactUsInputTop .contactUsInput input {
     padding: 8px;
     border: 1px solid rgba(128, 128, 128, 0.288);
+  }
+  .item {
+    height: auto;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1406,10 +1376,9 @@ footer .footerLinks p {
     border-radius: 20px;
   }
   .productSliderContainer .owl-Products .item .itemImage img {
-    border-radius: 20px;
+    max-width: 100px;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 200px;
   }
   .productSliderContainer .owl-Products .item .itemText p {
     padding: 0 10px;
@@ -1546,7 +1515,7 @@ footer .footerLinks p {
     padding: 8px;
   }
   .contactUsContainer .contactUsLeft h3 {
-    font-size: 15px;
+    font-size: 17px;
   }
   .contactUsContainer .contactUsLeft .contactIconandText {
     font-size: 12px;
@@ -1564,7 +1533,7 @@ footer .footerLinks p {
   .contactUsContainer .contactUsRight h4 {
     color: #26B3AA;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 17px;
   }
   .contactUsContainer .contactUsRight .contactUsInputTop {
     font-size: 12px;
