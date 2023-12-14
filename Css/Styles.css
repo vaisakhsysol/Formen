@@ -497,7 +497,6 @@
 }
 .owl-Team .item {
   border: 1px solid gray;
-  height: 800px;
 }
 .owl-Team .item p {
   font-size: 12px;
@@ -505,6 +504,7 @@
 }
 .owl-Team .item img {
   padding: 5px;
+  width: 300px;
 }
 .owl-Team .item .itemText {
   padding: 5px;
